@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="470f1bac-4ef7-4907-9ba7-b23e33ddc37f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Informatik Q/Java - Code/Java - Code.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Informatik Q/Java - Code/Java2022.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Informatik Q/Java - Code/out/production/Java - Code/KonsoleQ1/Felder_aufgabe_1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Informatik Q/Java - Code/out/production/Java - Code/KonsoleQ1/Parkscheinautomat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Informatik Q/Java - Code/out/production/Java - Code/KonsoleQ1/aufgabe6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Informatik Q/Java - Code/out/production/Java2022/KonsoleQ1/Parkscheinautomat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Informatik Q/Java - Code/out/production/Java2022/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Informatik Q/Java - Code/src/KonsoleQ1/Felder_aufgabe_1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Informatik Q/Java - Code/src/KonsoleQ1/Parkscheinautomat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Informatik Q/Java - Code/src/KonsoleQ1/aufgabe6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Informatik Q/Java - Stoff/AB---OOM00a---Grundlagen-Java.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Informatik Q/Java - Stoff/PP---OOM00---Uebersicht-Rahmenplan-Informatik-KCGO-Q1--LK.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Informatik Q/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2EVBlKvkz36M7RmVOl5rURWk9Tu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Felder_aufgabe_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="KonsoleQ1.Felder_aufgabe_1" />
+      <module name="Java - Code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="KonsoleQ1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Felder_aufgabe_1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="470f1bac-4ef7-4907-9ba7-b23e33ddc37f" name="Changes" comment="" />
+      <created>1662671023953</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662671023953</updated>
+    </task>
+    <servers />
+  </component>
+</project>
