@@ -7,6 +7,11 @@ public class Felder_aufgabe_1
         int[] wNeu = new int[10];
 
         while(allesGeloescht == false) {
+
+            for(int k=0; k<w.length-1; k++) {
+                wNeu[k] = w[k];
+            }
+
             allesGeloescht = true;
             for(int i=0; i<w.length; i++) {
                 if(w[i] == z){
@@ -14,14 +19,9 @@ public class Felder_aufgabe_1
                     for(int j=i; j<w.length-1; j++) {
                         w[j] = w[j+1];
                     }
-
-                    for(int k=0; k<w.length-1; k++) {
-                        wNeu[k] = w[k];
-                    }
                 }
             }
         }
-
 
         return wNeu;
     }
