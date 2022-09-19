@@ -2,19 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="470f1bac-4ef7-4907-9ba7-b23e33ddc37f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ArrayManager/ArrayForm.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ArrayManager/ArrayForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArbeitFelder/FelderGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArbeitFelder/FelderGUI.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArbeitFelder/FelderGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArbeitFelder/FelderGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/GUISumme.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/GUISumme.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/GUISumme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/GUISumme.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/Input.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java - Code/KonsoleQ1/Felder_aufgabe_1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java - Code/KonsoleQ1/Felder_aufgabe_1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java - Code/ArbeitFelder/FelderGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java - Code/ArbeitFelder/FelderGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArbeitFelder/FelderGUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArbeitFelder/FelderGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/GUISumme.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/GUISumme.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Input.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -32,13 +41,28 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="436" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\GitHub-repos\Informatik-Q\Java - Code\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FelderGUI">
+  <component name="RunManager" selected="Application.GUIFelder">
+    <configuration name="ArrayForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ArrayManager.ArrayForm" />
+      <module name="Java - Code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ArrayManager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FelderGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ArbeitFelder.FelderGUI" />
       <module name="Java - Code" />
@@ -80,6 +104,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ArrayForm" />
         <item itemvalue="Application.FelderGUI" />
         <item itemvalue="Application.Felder_aufgabe_1" />
       </list>
