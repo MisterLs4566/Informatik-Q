@@ -32,26 +32,30 @@ public class ArrayForm {
     private JTextField selectField;
 
     public JTextField[] arrayFields = new JTextField[14];
+    public int inputArray[] = new int[14];
     public String action = "";
+    public int cursor;
 
     public ArrayForm() {
 
-        arrayFields[0] = textField1;
-        arrayFields[1] = textField2;
-        arrayFields[2] = textField3;
-        arrayFields[3] = textField4;
-        arrayFields[4] = textField5;
-        arrayFields[5] = textField6;
-        arrayFields[6] = textField7;
-        arrayFields[7] = textField8;
-        arrayFields[8] = textField9;
-        arrayFields[9] = textField10;
-        arrayFields[10] = textField11;
-        arrayFields[11] = textField12;
-        arrayFields[12] = textField13;
-        arrayFields[13] = textField14;
+        arrayFields[0] = textField14;
+        arrayFields[1] = textField13;
+        arrayFields[2] = textField12;
+        arrayFields[3] = textField11;
+        arrayFields[4] = textField10;
+        arrayFields[5] = textField9;
+        arrayFields[6] = textField8;
+        arrayFields[7] = textField7;
+        arrayFields[8] = textField6;
+        arrayFields[9] = textField5;
+        arrayFields[10] = textField4;
+        arrayFields[11] = textField3;
+        arrayFields[12] = textField2;
+        arrayFields[13] = textField1;
 
-        clear();
+
+        inputArray = resetArray(inputArray);
+        showArray(inputArray, arrayFields);
 
         exitButton.addActionListener(new ActionListener() {
             @Override
@@ -63,54 +67,38 @@ public class ArrayForm {
         deleteButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                clearColors();
-                action = "selectAction";
-                for(JTextField i : arrayFields) {
-                    if(numequal(i)) {
-                        i.setText("");
-                    }
-                }
+                delete();
             }
         });
 
         newButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                clear();
+                resetArray(inputArray);
+                showArray(inputArray, arrayFields);
             }
         });
 
         searchButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                for(JTextField i : arrayFields) {
-                    if(numequal(i)) {
-                        i.setBackground(Color.GREEN);
-                    }
-                    else {
-                        i.setBackground(Color.RED);
-                    }
-                }
+                search(inputArray, arrayFields);
             }
         });
 
         insertButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                clearColors();
-                for(JTextField i : arrayFields) {
-                    if(i.getText() == "") {
-                        i.setText(selectField.getText());
-                        break;
-                    }
-                }
+                inputArray = insert(inputArray);
+                showArray(inputArray, arrayFields);
             }
         });
 
         fillButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                clearColors();
+                inputArray = fill(inputArray);
+                showArray(inputArray, arrayFields);
             }
         });
     }
@@ -123,49 +111,86 @@ public class ArrayForm {
         frame.setVisible(true);
     }
 
-    public int selectedNumber() {
-        String str = selectField.getText();
-
-        try {
-            return Integer.getInteger(str);
-        } catch(NumberFormatException e) {
-            JOptionPane.showMessageDialog(null,"Gib eine vernünftige Zahl ein.");
-            return -1;
+    public static void showArray(int inputArray[], JTextField[] arrayFields)
+    {
+        for(int i=0; i< arrayFields.length; i++){
+            if(inputArray[i] == -1) {
+                arrayFields[i].setText(" ");
+            }else {
+                arrayFields[i].setText(String.valueOf(inputArray[i]));
+            }
         }
     }
 
-    public boolean numequal(JTextField field) {
-        String selectStr = selectField.getText();
-        String fieldStr = field.getText();
-        int selectNum = -1, fieldNum;
-
-        try {
-            selectNum = Integer.parseInt(selectStr);
-            fieldNum = Integer.parseInt(fieldStr);
-            if(selectNum == fieldNum) {
-                return true;
-            }
-        } catch(NumberFormatException e) {
-            if(selectNum == -1 && action == "selectAction") {
-                JOptionPane.showMessageDialog(null,"Gib eine vernünftige Zahl ein.");
-                action = "";
-            }
-            return false;
+    public int[] resetArray(int inputArray[]) {
+        clearColors(arrayFields);
+        for(int i=0; i< inputArray.length; i++) {
+            inputArray[i] = -1;
         }
 
-        return false;
+        return inputArray;
     }
 
-    public void clear() {
+    public int setCursor() {
+        try{
+            int cursor = Integer.parseInt(selectField.getText());
+            return cursor;} catch (NumberFormatException e) {
+                    JOptionPane.showMessageDialog(null,"Gib eine vernünftige Zahl ein.");
+                    return -1;
+            }
+    }
+
+    public int[] insert(int inputArray[]) {
+        clearColors(arrayFields);
+        for (int i=0; i < inputArray.length; i++) {
+            if(inputArray[i] == -1) {
+                inputArray[i] = Integer.parseInt(selectField.getText());
+                return inputArray;
+            }
+        }
+
+        return inputArray;
+    }
+
+    public int[] fill(int inputArray[]) {
+        clearColors(arrayFields);
+        for (int i=0; i < inputArray.length; i++) {
+            if(inputArray[i] == -1) {
+                inputArray[i] = (int)(Math.random() * 100);
+                return inputArray;
+            }
+        }
+
+        return inputArray;
+    }
+
+    public void delete() {
+        clearColors(arrayFields);
+        cursor = setCursor();
+        for(int i=0; i < inputArray.length; i++){
+            if(inputArray[i] == cursor) {
+                inputArray[i] = -1;
+            }
+        }
+
+        showArray(inputArray, arrayFields);
+    }
+
+    public void clearColors(JTextField[] arrrayFields) {
         for(JTextField i : arrayFields) {
-            i.setText("");
             i.setBackground(Color.WHITE);
         }
     }
 
-    public void clearColors() {
-        for(JTextField i : arrayFields) {
-            i.setBackground(Color.WHITE);
+    public void search(int inputArray[], JTextField[] arrayFields) {
+        cursor = setCursor();
+        for(int i=0; i < inputArray.length; i++){
+            if(inputArray[i] == cursor) {
+                arrayFields[i].setBackground(Color.GREEN);
+            }
+            else {
+                arrayFields[i].setBackground(Color.RED);
+            }
         }
     }
 }
