@@ -134,21 +134,25 @@ public class ArrayForm {
     public int setCursor() {
         try{
             int cursor = Integer.parseInt(selectField.getText());
-            return cursor;} catch (NumberFormatException e) {
-                    JOptionPane.showMessageDialog(null,"Gib eine vernünftige Zahl ein.");
-                    return -1;
-            }
+            return cursor;
+        } catch (NumberFormatException e) {
+            int cursor = -2;
+            JOptionPane.showMessageDialog(null,"Gib eine vernünftige Zahl ein.");
+            return cursor;
+        }
     }
 
     public int[] insert(int inputArray[]) {
         clearColors(arrayFields);
-        for (int i=0; i < inputArray.length; i++) {
-            if(inputArray[i] == -1) {
-                inputArray[i] = Integer.parseInt(selectField.getText());
-                return inputArray;
+        cursor = setCursor();
+        if(cursor != -2) {
+            for (int i=0; i < inputArray.length; i++) {
+                if(inputArray[i] == -1) {
+                    inputArray[i] = cursor;
+                    return inputArray;
+                }
             }
         }
-
         return inputArray;
     }
 
@@ -184,12 +188,14 @@ public class ArrayForm {
 
     public void search(int inputArray[], JTextField[] arrayFields) {
         cursor = setCursor();
-        for(int i=0; i < inputArray.length; i++){
-            if(inputArray[i] == cursor) {
-                arrayFields[i].setBackground(Color.GREEN);
-            }
-            else {
-                arrayFields[i].setBackground(Color.RED);
+        if(cursor != -2) {
+            for(int i=0; i < inputArray.length; i++){
+                if(inputArray[i] == cursor) {
+                    arrayFields[i].setBackground(Color.GREEN);
+                }
+                else {
+                    arrayFields[i].setBackground(Color.RED);
+                }
             }
         }
     }
