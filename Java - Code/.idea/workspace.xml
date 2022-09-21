@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="470f1bac-4ef7-4907-9ba7-b23e33ddc37f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ArrayManager/ArrayForm.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ArrayManager/ArrayForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java - Code/ArbeitFelder/FelderGUI$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java - Code/ArbeitFelder/FelderGUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ArbeitFelder/FelderGUI.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ArbeitFelder/FelderGUI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/GUISumme.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/GUISumme.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/Input.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +40,7 @@
       <recent name="D:\GitHub-repos\Informatik-Q\Java - Code\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GUIFelder">
+  <component name="RunManager" selected="Application.ArrayForm">
     <configuration name="ArrayForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ArrayManager.ArrayForm" />
       <module name="Java - Code" />
