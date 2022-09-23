@@ -20,28 +20,49 @@ public class FeldMatrix {
     }
 
     public static void spaltensumme(int[][] matrix) {
-        //Zeilen
-        for (int i=0; i<matrix.length; i++) {
-            int res = 0;
-            //Spalten
-            for (int j=0; j<matrix[i].length; j++) {
-                res += matrix[i][j];
+        //spalten
+        for(int i=0; i < matrix.length; i++) {
+            //Zeilen
+            int spaltensumme = 0;
+            for(int j=0; j < matrix[0].length; j++) {
+                spaltensumme += matrix[j][i];
             }
-            System.out.println(res);
+            System.out.println("Summe Spalte " + i + 1 + ": " + spaltensumme);
+        }
+    }
+
+    public static void diagonalensumme(int[][] matrix) {
+        int zeile = matrix[0].length;
+        int summe = 0;
+        boolean flag = false;
+        while (zeile > 0) {
+            //zeilen
+            for(int i=zeile; i <= matrix[0].length-1; i++) {
+                //spalten
+                for(int j = 0; j < matrix.length; j++) {
+                    summe += matrix[i][j];
+                    System.out.println(summe);
+                }
+            }
+            System.out.println(summe);
+            summe = 0;
+            zeile--;
         }
     }
 
     public static void main(String[] args) {
-        int[][] matrix = { { 4,10, 3,20 },
+        int[][] matrix = {
+                { 4,10, 3,20 },
                 {12, 1,18, 3 },
                 { 3,13, 9,10 },
                 {25, 9,12, 6 } };
-        ausgeben(matrix);
-        System.out.println();
+
         for (int i = 1; i <= matrix.length; i++) {
             System.out.println("Summe Zeile " + i + ": " + summe(matrix,i-1));
         }
 
-        spaltensumme(matrix);
+        //ausgeben(matrix);
+        //spaltensumme(matrix);
+        diagonalensumme(matrix);
     }
 }
