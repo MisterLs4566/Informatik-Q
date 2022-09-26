@@ -31,23 +31,9 @@ public class FeldMatrix {
         }
     }
 
-    public static void diagonalensumme(int[][] matrix) {
-        int zeile = matrix[0].length;
-        int summe = 0;
-        boolean flag = false;
-        while (zeile > 0) {
-            //zeilen
-            for(int i=zeile; i <= matrix[0].length-1; i++) {
-                //spalten
-                for(int j = 0; j < matrix.length; j++) {
-                    summe += matrix[i][j];
-                    System.out.println(summe);
-                }
-            }
-            System.out.println(summe);
-            summe = 0;
-            zeile--;
-        }
+
+    public static void diagonalensumme2(int[][] matrix) {
+
     }
 
     public static void main(String[] args) {
@@ -63,6 +49,6 @@ public class FeldMatrix {
 
         //ausgeben(matrix);
         //spaltensumme(matrix);
-        diagonalensumme(matrix);
+        //diagonalensumme(matrix);
     }
 }
