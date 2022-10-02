@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="470f1bac-4ef7-4907-9ba7-b23e33ddc37f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FeldMat/FeldMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FeldMat/FeldMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Rekursion/pascalschesDreieck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rekursion/pascalschesDreieck.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +42,7 @@
       <recent name="D:\GitHub-repos\Informatik-Q\Java - Code\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FeldMatrix">
+  <component name="RunManager" selected="Application.pascalschesDreieck">
     <configuration name="ArrayForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ArrayManager.ArrayForm" />
       <module name="Java - Code" />
@@ -108,8 +108,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="pascalschesDreieck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Rekursion.pascalschesDreieck" />
+      <module name="Java - Code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Rekursion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.pascalschesDreieck" />
         <item itemvalue="Application.FeldMatrix" />
         <item itemvalue="Application.ArrayForm" />
         <item itemvalue="Application.FelderGUI" />
