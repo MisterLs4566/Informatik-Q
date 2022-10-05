@@ -26,6 +26,10 @@ public class pascalschesDreieck {
         return fac(n)/(fac(k) * fac(n-k));
     }
 
+    public static String term(int n) {
+        return "";
+    }
+
     public static void main(String[] args) {
         int erg1 = bRek(7, 4);
         int erg2 = bIter(7, 4);
