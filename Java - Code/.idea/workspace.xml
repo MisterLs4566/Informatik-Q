@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="470f1bac-4ef7-4907-9ba7-b23e33ddc37f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rekursion/pascalschesDreieck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rekursion/pascalschesDreieck.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +12,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="package-info" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -42,7 +41,7 @@
       <recent name="D:\GitHub-repos\Informatik-Q\Java - Code\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.pascalschesDreieck">
+  <component name="RunManager" selected="Application.zeichen_generator">
     <configuration name="ArrayForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ArrayManager.ArrayForm" />
       <module name="Java - Code" />
@@ -82,19 +81,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Felder_aufgabe_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="KonsoleQ1.Felder_aufgabe_1" />
-      <module name="Java - Code" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="KonsoleQ1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="GUIFelder" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FelderGUI.GUIFelder" />
       <module name="Java - Code" />
@@ -121,13 +107,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="zeichen_generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="KonsoleQ1.zeichen_generator" />
+      <module name="Java - Code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="KonsoleQ1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.zeichen_generator" />
         <item itemvalue="Application.pascalschesDreieck" />
         <item itemvalue="Application.FeldMatrix" />
         <item itemvalue="Application.ArrayForm" />
         <item itemvalue="Application.FelderGUI" />
-        <item itemvalue="Application.Felder_aufgabe_1" />
       </list>
     </recent_temporary>
   </component>
