@@ -67,6 +67,7 @@ public class MonsterGUI {
                     case 6:
                         break;
                     case 7:
+                        drawPythagoras(ordnung, laenge);
                         break;
                     case 8:
                         drawSierpinski(ordnung, laenge);
@@ -121,7 +122,23 @@ public class MonsterGUI {
     public void drawKurve5(int ordnung, double laenge) {
     }
 
-    public void drawPythagoras(int ordnung, double laenge) {
+    public void drawPythagoras(int n, double l) {
+        if(n==1) {
+            myTurtle.draw(l);
+            myTurtle.turn(-90);
+            myTurtle.draw(l);
+            myTurtle.turn(-90);
+            myTurtle.draw(l);
+            myTurtle.turn(-90);
+            myTurtle.draw(l);
+            myTurtle.turn(0.25*l/0.33*l);
+            myTurtle.draw(l);
+            myTurtle.turn(-90);
+            myTurtle.draw(0.5*l);
+        }
+        else if(n>0) {
+
+        }
     }
 
     public void drawSierpinski(int n, double l) {
