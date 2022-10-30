@@ -46,6 +46,50 @@ public class Suchen {
         }
     }
 
+    public static void sortiereBubble(int[] feld) {
+
+    }
+
+    public static void selectionSort(int[] feld) {
+
+    }
+
+    public static void insertionSort(int[] feld) {
+
+    }
+
+    public static void mergeSort(int[] feld) {
+
+    }
+
+    public static void quickSort(int[] feld) {
+
+    }
+
+    public static boolean check_sorted(int[] feld) {
+
+    }
+
+    public static boolean sortRandom(int[] num_used){
+
+    }
+
+    public static void puzzle() {
+
+    }
+
+    public static int[] bogosort(int[] feld) {
+        int[] num_used = new int[feld.length-1];
+        sortRandom(num_used);
+        puzzle();
+        if(check_sorted(feld)){
+            return feld;
+        }
+        else {
+            return bogosort(feld);
+        }
+    }
+
     public static void main(String[] args) {
         int laenge = 100;
         int wert;
