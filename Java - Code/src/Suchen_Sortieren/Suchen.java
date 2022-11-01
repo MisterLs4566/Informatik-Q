@@ -126,7 +126,7 @@ public class Suchen {
         System.out.println("----------------BUBBLESORT----------------");
         int[] bubbleFeld = {12, 76, 30, 42, 10, 60, 34, 90, 35};
         int[] bubbleFeldSorted = new int[bubbleFeld.length];
-        bubbleFeldSorted = bubbleSort(bubbleFeld);
+        //bubbleFeldSorted = bubbleSort(bubbleFeld);
         feldausgeben(bubbleFeldSorted);
     }
 }
