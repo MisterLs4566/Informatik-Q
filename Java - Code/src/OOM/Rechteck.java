@@ -51,4 +51,26 @@ public class Rechteck {
         int a = (int) (this.y2 - this.y1) * (this.x2 - this.x1);
         return a;
     }
+
+    public int berechneUmfang() {
+        int u = (int) ((this.y2 - this.y1) + (this.x2 - this.x1)) * 2;
+        return u;
+    }
+
+    public void verschiebe(int x, int y) {
+        this.x1 += x;
+        this.x2 += x;
+        this.y1 += y;
+        this.y2 += y;
+    }
+
+    public char schneidet(Rechteck rechteck2) {
+        if(this.x1 <= rechteck2.x2) {
+            if(this.x2 >= rechteck2.x1) {
+                return 'j';
+            }
+        }
+
+        return 'n';
+    }
 }
