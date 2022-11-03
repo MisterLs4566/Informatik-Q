@@ -48,7 +48,7 @@ public class Rechteck {
     }
 
     public int flaeche() {
-        int a = (int) (this.y2 - this.y1) * (this.x2 - this.x1);
+        int a = Math.abs(this.y2 - this.y1) * (this.x2 - this.x1);
         return a;
     }
 
@@ -65,9 +65,15 @@ public class Rechteck {
     }
 
     public char schneidet(Rechteck rechteck2) {
+        //x Werte überprüfen
         if(this.x1 <= rechteck2.x2) {
             if(this.x2 >= rechteck2.x1) {
-                return 'j';
+                //y Werte überprüfen
+                if(this.y1 <= rechteck2.y2) {
+                    if(this.y2 >= rechteck2.y1) {
+                        return 'j';
+                    }
+                }
             }
         }
 
