@@ -50,4 +50,10 @@ public class Auto {
             System.out.println("Zu viel Menge angegeben");
         }
     }
+
+    public void fahren (double strecke) {
+        this.kmStand += (int)strecke;
+        this.verbrauch += (this.kmMenge / this.kmStand) * 100;
+        System.out.println(kmStand);
+    }
 }
