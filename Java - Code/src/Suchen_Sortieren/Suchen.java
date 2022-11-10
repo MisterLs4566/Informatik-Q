@@ -69,14 +69,38 @@ public class Suchen {
 
     }
 
-    public static void bubbleSort(int[] feld) {
-        for(int i=0; i<feld.length; i++) {
-
+    public static int[] bubbleSort(int[] feld) {
+        boolean tauschen = true;
+        int merken;
+        while(tauschen) {
+            tauschen = false;
+            for(int i=0; i<feld.length-1; i++) {
+                if(feld[i+1] < feld[i]) {
+                    merken = feld[i+1];
+                    feld[i+1] = feld[i];
+                    feld[i] = merken;
+                    tauschen = true;
+                }
+            }
         }
+
+        return feld;
     }
 
-    public static void selectionSort(int[] feld) {
-
+    public static int[] selectionSort(int[] feld) {
+        int min = 0;
+        int merken;
+        for(int i=0; i<feld.length-1; i++) {
+            for(int j=i; j<feld.length-1; j++) {
+                if(feld[j] < feld[j+1]) {
+                    min = j;
+                }
+            }
+            merken = feld[i];
+            feld[i] = feld[min];
+            feld[min] = merken;
+        }
+        return feld;
     }
 
     public static void insertionSort(int[] feld) {
@@ -126,7 +150,12 @@ public class Suchen {
         System.out.println("----------------BUBBLESORT----------------");
         int[] bubbleFeld = {12, 76, 30, 42, 10, 60, 34, 90, 35};
         int[] bubbleFeldSorted = new int[bubbleFeld.length];
-        //bubbleFeldSorted = bubbleSort(bubbleFeld);
+        bubbleFeldSorted = bubbleSort(bubbleFeld);
         feldausgeben(bubbleFeldSorted);
+        System.out.println("----------------SELECTIONSORT----------------");
+        int[] selectionField = {12, 76, 30, 42, 10, 60, 34, 90, 35};
+        int[] selectionFieldSorted = new int[selectionField.length];
+        selectionFieldSorted = selectionSort(selectionField);
+        feldausgeben(selectionFieldSorted);
     }
 }
