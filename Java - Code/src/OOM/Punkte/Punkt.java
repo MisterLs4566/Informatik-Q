@@ -33,9 +33,8 @@ public class Punkt {
         int yNeu = (int) posY*-1;
         return new Punkt(xNeu, yNeu);
     }
-
     public int abstandPunkt(Punkt pNeu) {
-        return (int)(Math.pow(Math.pow(pNeu.posX - this.posX, 2) - Math.pow(pNeu.posY - this.posY, 2), 0.5));
+        return (int)(Math.pow(Math.pow(pNeu.posX - this.posX, 2) + Math.pow(pNeu.posY - this.posY, 2), 0.5));
     }
 
     public void setPosX(int x) {

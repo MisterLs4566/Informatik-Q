@@ -6,6 +6,7 @@ public class RadioApp {
         linusRadio.an();
         linusRadio.lauter();
         linusRadio.lauter();
+        linusRadio.waehleSender(95);
         System.out.println(linusRadio.toString());
     }
 }

@@ -58,7 +58,7 @@ public class Radio {
             return;
         }
         this.frequenz = frequenz;
-        if(((frequenz<=110) && (frequenz>=110)) == false) {
+        if(((frequenz<=110) && (frequenz>=85.0)) == false) {
             System.out.println("Eingegebene Frequenz außerhalb des zugelassenen Bereiches");
             this.frequenz = 99.9;
         }
