@@ -70,7 +70,7 @@ public class Suchen {
     }
 
     public static int[] bubbleSort(int[] feld) {
-        boolean tauschen = true;
+        /*boolean tauschen = true;
         int merken;
         while(tauschen) {
             tauschen = false;
@@ -83,12 +83,26 @@ public class Suchen {
                 }
             }
         }
+        */
+
+        int n = feld.length;
+        // geht das Feld bis zum Ende durch
+        for (int i=0; i<n-1; i++) {
+            //geht das Feld bis zu ende - i durch
+            for(int j=0; j<n-i-1; j++) {
+                if(feld[j] > feld[j+1]) {
+                    int temp = feld[j+1];
+                    feld[j+1] = feld[j];
+                    feld[j] = temp;
+                }
+            }
+        }
 
         return feld;
     }
 
     public static int[] selectionSort(int[] feld) {
-        int min = 0;
+        /*int min = 0;
         int merken;
         for(int i=0; i<feld.length-1; i++) {
             for(int j=i; j<feld.length-1; j++) {
@@ -100,23 +114,38 @@ public class Suchen {
             feld[i] = feld[min];
             feld[min] = merken;
         }
+        */
+
+        int n = feld.length;
+        for(int i=0; i < n-1; i++) {
+            int minID = i;
+            for(int j=i+1; j<n; j++) {
+                if(feld[j] < feld[minID]) {
+                    minID = j;
+                }
+            }
+            int temp = feld[minID];
+            feld[minID] = feld[i];
+            feld[i] = temp;
+
+        }
+
         return feld;
     }
 
-    public static void insertionSort(int[] feld) {
+    public static int[] insertionSort(int[] feld) {
+        int n = feld.length;
+        for(int i=1; i<n; i++) {
+            int key = feld[i];
+            int j = i - 1;
+            while (j >= 0 && feld[j] > key) {
+                feld[j+1] = feld[j];
+                j--;
+            }
 
-    }
-
-    public static void mergeSort(int[] feld) {
-
-    }
-
-    public static void quickSort(int[] feld) {
-
-    }
-
-    public static void puzzle() {
-
+            feld[j+1] = key;
+        }
+        return feld;
     }
 
     public static void main(String[] args) {
@@ -157,5 +186,10 @@ public class Suchen {
         int[] selectionFieldSorted = new int[selectionField.length];
         selectionFieldSorted = selectionSort(selectionField);
         feldausgeben(selectionFieldSorted);
+        System.out.println("----------------INSERTIONSORT----------------");
+        int[] insertionField = {12, 76, 30, 42, 10, 60, 34, 90, 35};
+        int[] insertionFieldSorted = new int[insertionField.length];
+        insertionFieldSorted = insertionSort(insertionField);
+        feldausgeben(insertionFieldSorted);
     }
 }
