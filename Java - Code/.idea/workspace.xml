@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="470f1bac-4ef7-4907-9ba7-b23e33ddc37f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java - Code/OOM/Aquarien/Aquarium.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java - Code/OOM/Aquarien/Aquarium.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java - Code/OOM/Aquarien/AquariumApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java - Code/OOM/Aquarien/AquariumApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java - Code/OOM/Punkte/Punkt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java - Code/OOM/Punkte/Punkt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java - Code/OOM/Punkte/PunktApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java - Code/OOM/Punkte/PunktApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java - Code/OOM/Radios/Radio.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java - Code/OOM/Radios/Radio.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java - Code/OOM/Radios/RadioApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java - Code/OOM/Radios/RadioApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java - Code/Suchen_Sortieren/Suchen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java - Code/Suchen_Sortieren/Suchen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Klausur/KlausurTraining.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Klausur/KlausurTraining.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OOM/Aquarien/Aquarium.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Suchen_Sortieren/Suchen.java" beforeDir="false" />
-    </list>
+    <list default="true" id="470f1bac-4ef7-4907-9ba7-b23e33ddc37f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,12 +37,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\GitHub-repos\Informatik-Q\Java - Code\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.KlausurTraining">
+  <component name="RunManager" selected="Application.AppBibliothek">
+    <configuration name="AppBibliothek" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OOM.bib.AppBibliothek" />
+      <module name="Java - Code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="OOM.bib.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AquariumApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="OOM.Aquarien.AquariumApp" />
       <module name="Java - Code" />
@@ -94,19 +101,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PunktApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="OOM.Punkte.PunktApp" />
-      <module name="Java - Code" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="OOM.Punkte.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RadioApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="OOM.Radios.RadioApp" />
       <module name="Java - Code" />
@@ -135,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AppBibliothek" />
         <item itemvalue="Application.KlausurTraining" />
         <item itemvalue="Application.Suchen" />
         <item itemvalue="Application.AquariumApp" />
         <item itemvalue="Application.RadioApp" />
-        <item itemvalue="Application.PunktApp" />
       </list>
     </recent_temporary>
   </component>
