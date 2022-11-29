@@ -37,24 +37,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\GitHub-repos\Informatik-Q\Java - Code\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AppBibliothek">
+  <component name="RunManager" selected="Application.AppPyramiden">
     <configuration name="AppBibliothek" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="OOM.bib.AppBibliothek" />
       <module name="Java - Code" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="OOM.bib.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppPyramiden" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Vererbung.Pyramiden.AppPyramiden" />
+      <module name="Java - Code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Vererbung.Pyramiden.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,19 +114,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="OOM.Radios.RadioApp" />
-      <module name="Java - Code" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="OOM.Radios.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Suchen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Suchen_Sortieren.Suchen" />
       <module name="Java - Code" />
@@ -129,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AppPyramiden" />
         <item itemvalue="Application.AppBibliothek" />
         <item itemvalue="Application.KlausurTraining" />
         <item itemvalue="Application.Suchen" />
         <item itemvalue="Application.AquariumApp" />
-        <item itemvalue="Application.RadioApp" />
       </list>
     </recent_temporary>
   </component>
