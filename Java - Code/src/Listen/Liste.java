@@ -15,7 +15,7 @@ public class Liste {
         String zeichenkette = "";
         Element element = this.root;
 
-        if(count == 0) {
+        if(this.count == 0) {
             zeichenkette = "leer";
             return zeichenkette;
         } else if(count == 1) {
@@ -52,9 +52,11 @@ public class Liste {
             this.current = this.root;
             this.count = 1;
             return;
+        } else{
+            previousELement();
+            insertBehind(element);
+            this.count++;
         }
-
-        /*CODE*/
     }
 
     public void insertBehind(Element element) {
@@ -63,6 +65,11 @@ public class Liste {
             this.current = this.root;
             this.count = 1;
             return;
+        } else {
+            Element scout = this.current.getNext();
+            this.current.setNext(element);
+            element.setNext(scout);
+            this.count++;
         }
 
         /*CODE*/
@@ -96,12 +103,14 @@ public class Liste {
         if(this.current == this.root) {
             this.root = null;
             this.current = this.root;
+            this.count = 0;
         } else {
             while(scout.getNext() != this.current) {
                 scout = scout.getNext();
             }
 
             scout.setNext(this.current.getNext());
+            this.count--;
         }
     }
 
